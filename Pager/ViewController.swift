@@ -18,12 +18,12 @@ class ViewController: PagerController, PagerDataSource {
 
 		// Instantiating Storyboard ViewControllers
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let controller1 = storyboard.instantiateViewControllerWithIdentifier("firstView")
-		let controller2 = storyboard.instantiateViewControllerWithIdentifier("secondView")
-		let controller3 = storyboard.instantiateViewControllerWithIdentifier("thirdView")
-		let controller4 = storyboard.instantiateViewControllerWithIdentifier("fourthView")
-		let controller5 = storyboard.instantiateViewControllerWithIdentifier("fifthView")
-		let controller6 = storyboard.instantiateViewControllerWithIdentifier("sixthView")
+		let controller1 = storyboard.instantiateViewController(withIdentifier: "firstView")
+		let controller2 = storyboard.instantiateViewController(withIdentifier: "secondView")
+		let controller3 = storyboard.instantiateViewController(withIdentifier: "thirdView")
+		let controller4 = storyboard.instantiateViewController(withIdentifier: "fourthView")
+		let controller5 = storyboard.instantiateViewController(withIdentifier: "fifthView")
+		let controller6 = storyboard.instantiateViewController(withIdentifier: "sixthView")
 
 		// Setting up the PagerController with Name of the Tabs and their respective ViewControllers
 		self.setupPager(
@@ -36,19 +36,19 @@ class ViewController: PagerController, PagerDataSource {
 	// Customising the Tab's View
 	func customiseTab()
 	{
-		indicatorColor = UIColor.whiteColor()
+		indicatorColor = UIColor.white()
 		tabsViewBackgroundColor = UIColor(rgb: 0x00AA00)
-		contentViewBackgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.32)
+		contentViewBackgroundColor = UIColor.gray().withAlphaComponent(0.32)
 
 		startFromSecondTab = false
 		centerCurrentTab = false
-		tabLocation = PagerTabLocation.Top
+		tabLocation = PagerTabLocation.top
 		tabHeight = 49
 		tabOffset = 36
 		tabWidth = 96.0
 		fixFormerTabsPositions = false
 		fixLaterTabsPosition = false
-		animation = PagerAnimation.During
+		animation = PagerAnimation.during
 	}
 
 	override func didReceiveMemoryWarning() {
