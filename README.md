@@ -1,4 +1,7 @@
+
 ![](http://i24.photobucket.com/albums/c50/KKS-KKS/Screen%20Shot%202015-03-17%20at%2010.18.44%20AM_1.png)
+
+[![Language](https://img.shields.io/badge/swift-3.0-orange.svg)](http://swift.org)
 
 Pager is the simplest and best way to implement sliding view controllers.
 
@@ -47,7 +50,7 @@ optional func didChangeTabToIndex(pager: PagerController, index: Int, previousIn
 
 ## Contact
 - [Lucas Farah](mailto:lucas.farah@me.com) - [@7farah7](http://twitter.com/7farah7)
-- [Lucas Martins](mailto:lucoceano@ckl.io) - [ckl.io](http://www.ckl.io)
+- [Lucas Martins](mailto:lucoceano@gmail.com) - [lucoceano.com](http://www.lucoceano.com)
 
 Pager is a port from [CKViewPager](https://github.com/lucoceano/CKViewPager) to swift.
 
